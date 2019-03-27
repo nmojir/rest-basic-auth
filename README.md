@@ -11,14 +11,12 @@ Sample REST service call:
 -------------------------
 NOTE: Authorization header (basic) should be provided on all calls.
 
------------------
+
 1) to get person:
------------------
 GET http://localhost:8080/ts-core/persons/1
 
 --------------------------
 2) to create a new person:
---------------------------
 POST http://localhost:8080/ts-core/persons
 content-type: application/json
 
@@ -31,7 +29,6 @@ body:
 
 ----------------------
 3) to update a person:
-----------------------
 PUT http://localhost:8080/ts-core/persons/1
 
 content-type: application/json
@@ -45,7 +42,6 @@ body:
 
 ----------------------
 4) to delete a person:
-----------------------
 DELETE http://localhost:8080/ts-core/persons/1
 
 
