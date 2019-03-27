@@ -7,16 +7,18 @@ I have deployed and tested this code on apache-tomee-7.0.3 application server.
 
 NOTE: To be worked currectly you must make sure that commons-beanutils library version be greater than 1.9. In apache-tomee-7.0.3 I was forced to remove file "commons-beanutils-core-1.8.3.jar" from lib directory. The correct version of beanutils is included in the pom dependency.
 
-##Sample REST service call:
+## Sample REST service call:
 -------------------------
 NOTE: Authorization header (basic) should be provided on all calls.
 
 
-###1) **to get person:**
+### 1) **to get person:**
+```
 GET http://localhost:8080/ts-core/persons/1
+```
 
 --------------------------
-###2) **to create a new person:**
+### 2) **to create a new person:**
 ```
 POST http://localhost:8080/ts-core/persons
 content-type: application/json
@@ -28,7 +30,7 @@ body:
 }
 ```
 ----------------------
-###3) **to update a person:**
+### 3) **to update a person:**
 ```
 PUT http://localhost:8080/ts-core/persons/1
 content-type: application/json
@@ -40,11 +42,11 @@ body:
 }
 ```
 ----------------------
-###4) **to delete a person:**
+### 4) **to delete a person:**
 ```
 DELETE http://localhost:8080/ts-core/persons/1
 ```
 
-##Notes:
+## Notes:
 ------
 - Do not forget to configure persistence.xml correctly.
